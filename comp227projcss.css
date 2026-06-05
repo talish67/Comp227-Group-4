@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d1b514;
+  color: #111;
+}
+
+.top-header {
+  height: 160px;
+  background-color: #d1b514;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  right: 125px;
+  width: 110px;
+  height: 110px;
+}
+
+.main-nav {
+  height: 82px;
+  background-color: #6f8a63;
+  border: 1px solid #1d2c1d;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 36px;
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.icon-box {
+  width: 74px;
+  height: 82px;
+  background-color: #d2dbd0;
+  border-left: 2px solid #8fa08b;
+  border-right: 2px solid #8fa08b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  margin-top: 48px;
+  width: 228px;
+  height: 68px;
+  background-color: #6f8a63;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+}
+
+.content {
+  display: flex;
+  height: 357px;
+}
+
+.about-text {
+  width: 59%;
+  background-color: #686463;
+  color: white;
+  font-size: 36px;
+  padding: 64px 0 0 45px;
+  position: relative;
+}
+
+.video-box {
+  width: 41%;
+  background-color: #2d2f2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background-color: rgba(210, 210, 210, 0.7);
+  position: relative;
+}
+
+.play-button::after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 92px;
+  width: 0;
+  height: 0;
+  border-top: 62px solid transparent;
+  border-bottom: 62px solid transparent;
+  border-left: 95px solid white;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  gap: 34px;
+}
+
+.small-icon {
+  width: 38px;
+  height: 38px;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+}
+.icon-pictures {
+    width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
