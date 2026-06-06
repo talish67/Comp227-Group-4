@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #6f8f62;
+}
+
+/* Yellow top section */
+.top-header {
+  height: 210px;
+  background-color: #D4B31D;
+  position: relative;
+  border: 1px solid #333;
+}
+
+.logo {
+  position: absolute;
+  top: 55px;
+  right: 60px;
+  width: 230px;
+  height: auto;
+}
+
+/* Navigation bar */
+.main-nav {
+  height: 82px;
+  background-color: #6e8d63;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.main-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 34px;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #3f5d3c;
+}
+
+.icon-box {
+  width: 74px;
+  height: 80px;
+  background-color: #dbe3d6;
+  border-left: 1px solid #4c6846;
+  border-right: 1px solid #4c6846;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Directory table area */
+.directory-section {
+  background-color: #6f8f62;
+  padding-top: 24px;
+}
+
+.directory-header,
+.directory-row {
+  display: grid;
+  grid-template-columns: 25.5% 34.5% 40%;
+  width: 100%;
+}
+
+.directory-header {
+  height: 48px;
+  background-color: #777977;
+  color: white;
+  font-size: 24px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border-right: 2px solid #bbb;
+}
+
+.email {
+  border-right: none;
+}
+
+.small-icon {
+  width: 42px;
+  height: 42px;
+  background-color: #dbe3d6;
+  margin-left: 8px;
+  border: 1px solid #777;
+  display: inline-block;
+}
+
+/* Empty rows */
+.directory-row {
+  height: 48px;
+  background-color: #777977;
+  border-radius: 22px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.directory-row div {
+  border-right: 2px solid #bbb;
+}
+
+.directory-row div:last-child {
+  border-right: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .top-header {
+    height: 150px;
+  }
+
+  .logo {
+    width: 85px;
+    right: 25px;
+    top: 40px;
+  }
+
+  .main-nav {
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 0;
+  }
+
+  .main-nav a {
+    font-size: 22px;
+    padding: 15px 8px;
+  }
+
+  .icon-box {
+    width: 55px;
+    height: 55px;
+  }
+
+  .directory-header {
+    font-size: 16px;
+  }
+
+  .small-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .directory-row,
+  .directory-header {
+    grid-template-columns: 30% 35% 35%;
+  }
+}
