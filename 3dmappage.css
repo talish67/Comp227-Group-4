@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#d9d9d9;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.top-header{
+    height:160px;
+    background:#d1b514;
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    right:40px;
+    top:10px;
+    width: 230px;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+
+.main-nav{
+    background:#739065;
+    border-radius:0 0 30px 30px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.main-nav a{
+    color:black;
+    text-decoration:none;
+    font-size:32px;
+    padding:18px 12px;
+    border-right:2px solid #4c6846;
+}
+
+.icon-box{
+    width:85px;
+    height:80px;
+    background:#d8ddd4;
+    border-left:1px solid #4c6846;
+    border-right:1px solid #4c6846;
+}
+
+/* =====================
+   PAGE CONTENT
+===================== */
+
+.map-container{
+    padding-top:40px;
+}
+
+.map-title{
+    background:#739065;
+    color:white;
+    font-size:32px;
+    width:260px;
+    padding:15px;
+}
+
+.content-area{
+    display:flex;
+    gap:40px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* =====================
+   MAP
+===================== */
+
+.map-viewer{
+    flex:1;
+    min-height:500px;
+    background:white;
+}
+
+/* =====================
+   BUILDING MENU
+===================== */
+
+.building-menu{
+    width:260px;
+    display:flex;
+    flex-direction:column;
+    gap:55px;
+    align-items:flex-end;
+}
+
+.building-btn{
+    width:260px;
+    height:70px;
+
+    border:none;
+    border-radius:35px;
+
+    background:#739065;
+    color:white;
+
+    font-size:28px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.building-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 768px){
+
+    .top-header{
+        height:120px;
+    }
+
+    .logo{
+        width:80px;
+        right:15px;
+    }
+
+    .main-nav{
+        flex-wrap:wrap;
+        border-radius:0;
+    }
+
+    .main-nav a{
+        font-size:20px;
+        padding:12px 8px;
+    }
+
+    .icon-box{
+        width:55px;
+        height:55px;
+    }
+
+    .content-area{
+        flex-direction:column;
+    }
+
+    .building-menu{
+        width:100%;
+        align-items:center;
+        gap:20px;
+    }
+
+    .building-btn{
+        width:90%;
+        max-width:300px;
+    }
+
+    .map-title{
+        width:100%;
+        font-size:24px;
+    }
+}
