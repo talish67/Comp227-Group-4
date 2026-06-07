@@ -92,6 +92,10 @@ body {
   border: 1px solid #777;
   display: inline-block;
 }
+.small-icon img {
+  width:42px;
+  height:42px;
+}
 /* Directory rows */
 .directory-row {
   height: 48px;
