@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Map Page</title>
+    <link rel="stylesheet" href="3dmappage.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="top-header">
+        <img src="dsc-logo-2-1.png" alt="College Logo" class="logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+
+        <div class="icon-box">
+            <img src="home.png" alt="home" width="85" height="80">
+            <!-- Home Icon -->
+        </div>
+
+        <a href="3dmap.html">3D Map Page</a>
+
+        <div class="icon-box">
+            <img src="map.png.jpeg" alt="map" width="85" height="80">
+        </div>
+
+        <a href="directory.html">Directory</a>
+
+        <div class="icon-box">
+            <img src="Directory.png" alt="directory" width="85" height="80">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="map-container">
+
+        <div class="map-title">
+            3D Map
+        </div>
+
+        <div class="content-area">
+
+            <!-- Kuula Map -->
+            <div class="map-viewer">
+
+                <iframe
+                    id="kuulaFrame"
+                    src="https://kuula.co/share/collection/7TLjg?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+                    width="100%"
+                    height="500"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <!-- Building Buttons -->
+            <aside class="building-menu">
+
+                <button class="building-btn" onclick="openBuilding('buildingA')">
+                    Building A
+                </button>
+
+                <button class="building-btn" onclick="openBuilding('buildingB')">
+                    Building B
+                </button>
+                
+                <button class="building-btn" onclick="openBuilding('buildingC')">
+                    Building C
+                </button>
+            
+            </aside>
+
+        </div>
+
+    </section>
+<script>
+    const buildingLinks = {
+        /* These links lead to the same slideshow because there is currently only one global slideshow */
+        buildingA: "https://kuula.co/share/collection/7TLjg?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1",
+        buildingB: "https://kuula.co/share/collection/7TLjg?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1",
+        buildingC: "https://kuula.co/share/collection/7TLjg?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+    };
+
+    function openBuilding(building) {
+        const frame = document.getElementById("kuulaFrame");
+        frame.src = buildingLinks[building];
+    }
+</script>
+</body>
+</html>
