@@ -1,0 +1,3 @@
+﻿1. Download the comp227website.zip folder included in the repository
+2. Extract the files, locate index.html (website’s homepage)
+3. Navigate the website from this point
