@@ -47,10 +47,10 @@ body {
 
 .icon-box {
   width: 74px;
-  height: 80px;
-  background-color: #dbe3d6;
-  border-left: 1px solid #4c6846;
-  border-right: 1px solid #4c6846;
+  height: 82px;
+  background-color: #d2dbd0;
+  border-left: 2px solid #8fa08b;
+  border-right: 2px solid #8fa08b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,39 +142,25 @@ body {
     right: 20px;
   }
 
-    /* Navigation bar - mobile optimized */
   .main-nav {
     height: auto;
-    min-height: 70px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
     border-radius: 0;
-    padding: 6px 4px;
-    gap: 4px;
-    overflow: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
   }
 
   .main-nav a {
-    font-size: 24px;
-    padding: 8px 6px;
+    font-size: 20px;
     height: auto;
-    border-right: none;
-    white-space: nowrap;
+    padding: 12px 10px;
   }
 
   .icon-box {
-    width: 52px;
-    height: 52px;
-    padding: 6px;
-    border-left: none;
-    border-right: none;
-  }
-
-  .icon-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 45px;
+    height: 45px;
+    border: none;
+    margin: 4px;
   }
 
   .section-title {
