@@ -41,6 +41,11 @@ body {
   align-items: center;
   border-right: 2px solid #3f5d3c;
 }
+.nav-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
 .icon-box {
   width: 74px;
   height: 80px;
