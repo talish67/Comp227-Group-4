@@ -122,40 +122,41 @@ body {
   }
 
   /* Navigation bar - mobile optimized */
-  .main-nav {
-    height: auto;
-    min-height: 70px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 0;
-    padding: 6px 4px;
-    gap: 4px;
-    overflow: visible;
-  }
+.main-nav {
+  height: auto;
+  min-height: 58px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0;
+  padding: 6px 4px;
+  gap: 2px;
+  overflow: visible;
+}
 
-  .main-nav a {
-    font-size: 24px;
-    padding: 8px 6px;
-    height: auto;
-    border-right: none;
-    white-space: nowrap;
-  }
+.main-nav a {
+  font-size: 14px;
+  padding: 6px 4px;
+  height: auto;
+  border-right: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
-  .icon-box {
-    width: 52px;
-    height: 52px;
-    padding: 6px;
-    border-left: none;
-    border-right: none;
-  }
+.icon-box {
+  width: 34px;
+  height: 34px;
+  padding: 4px;
+  border-left: 1px solid #4c6846;
+  border-right: 1px solid #4c6846;
+  flex-shrink: 0;
+}
 
-  .icon-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
   /* Directory area spacing */
   .directory-section {
     padding-top: 18px;
