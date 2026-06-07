@@ -44,6 +44,11 @@ body {
   display: flex;
   align-items: center;
 }
+.nav-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
 
 .icon-box {
   width: 74px;
@@ -129,38 +134,49 @@ body {
   height: 38px;
   border-radius: 50%;
 }
-/* Mobile optimisation */
-@media (max-width: 768px){
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
   .top-header {
     height: 100px;
   }
 
   .logo {
     width: 75px;
-    height: 75px;
+    height: auto;
     top: 12px;
     right: 20px;
   }
 
   .main-nav {
     height: auto;
+    min-height: 58px;
     border-radius: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 0;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 6px 4px;
+    overflow: visible;
   }
 
   .main-nav a {
-    font-size: 20px;
+    font-size: 14px;
     height: auto;
-    padding: 12px 10px;
+    padding: 6px 4px;
+    white-space: nowrap;
   }
 
   .icon-box {
-    width: 45px;
-    height: 45px;
-    border: none;
-    margin: 4px;
+    width: 34px;
+    height: 34px;
+    border-left: 1px solid #8fa08b;
+    border-right: 1px solid #8fa08b;
+    margin: 0 2px;
+    flex-shrink: 0;
+  }
+
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
   }
 
   .section-title {
@@ -211,8 +227,9 @@ body {
     width: 32px;
     height: 32px;
   }
+
   .icon-pictures {
     width: 32px;
-  height: 32px;
+    height: 32px;
   }
 }
