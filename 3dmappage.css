@@ -47,12 +47,15 @@ body{
     border-right:2px solid #4c6846;
 }
 
-.icon-box{
-    width:85px;
-    height:80px;
-    background:#d8ddd4;
-    border-left:1px solid #4c6846;
-    border-right:1px solid #4c6846;
+.icon-box {
+  width: 74px;
+  height: 82px;
+  background-color: #d2dbd0;
+  border-left: 2px solid #8fa08b;
+  border-right: 2px solid #8fa08b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-icon {
   width: 52px;
