@@ -184,5 +184,49 @@ body{
     height: 24px;
     object-fit: contain;
   }
+    @media (max-width: 768px) {
 
+  /* =====================
+     FIX CONTENT LAYOUT
+  ===================== */
+
+  .content-area {
+    flex-direction: column;   /* stack instead of side-by-side */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .map-viewer {
+    width: 100%;
+    min-height: 300px; /* smaller but still usable */
+  }
+
+  /* =====================
+     BUILDING MENU FIX
+  ===================== */
+
+  .building-menu {
+    width: 100%;
+    align-items: center;   /* center buttons instead of right */
+    gap: 15px;
+  }
+
+  .building-btn {
+    width: 90%;        /* responsive buttons */
+    max-width: 320px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  /* =====================
+     MAP TITLE FIX
+  ===================== */
+
+  .map-title {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
 }
+
+
