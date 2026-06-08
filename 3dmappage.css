@@ -126,42 +126,7 @@ body{
     transform:translateY(-2px);
 }
 
-/* Navigation bar - mobile optimized */
-.main-nav {
-  height: auto;
-  min-height: 58px;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 0;
-  padding: 6px 4px;
-  gap: 2px;
-  overflow: visible;
-}
 
-.main-nav a {
-  font-size: 14px;
-  padding: 6px 4px;
-  height: auto;
-  border-right: none;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.icon-box {
-  width: 34px;
-  height: 34px;
-  padding: 4px;
-  border-left: 1px solid #4c6846;
-  border-right: 1px solid #4c6846;
-  flex-shrink: 0;
-}
-
-.nav-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
 /* Mobile responsive */
 @media (max-width: 768px) {
   .top-header {
