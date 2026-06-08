@@ -54,6 +54,11 @@ body{
     border-left:1px solid #4c6846;
     border-right:1px solid #4c6846;
 }
+.nav-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
 
 /* =====================
    PAGE CONTENT
