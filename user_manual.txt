@@ -1,3 +1,13 @@
-﻿1. Download the comp227website.zip folder included in the repository
-2. Extract the files, locate index.html (website’s homepage)
-3. Navigate the website from this point
+INSTRUCTIONS FOR OPENING THE WEBSITE WITH YOUR COMPUTER AS THE HOST
+----------------------------------------------------------------------
+
+1. Create a folder to house all the files from this repository
+2. Download files and place them inside this new folder
+3. Look for index.html, double click and open.
+----------------------------------------------------------------------
+INSTRUCTIONS FOR OPENING THE LIVE WEBSITE FROM THE REPOSITORY
+
+1. Go to the settings tab of this repository
+2. Look for "Pages" on the left column, then open it
+3. You will see "Your site is live at https://talish67.github.io/Comp227-Group-4/"; click visit site next to it.
+----------------------------------------------------------------------
